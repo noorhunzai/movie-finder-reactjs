@@ -5,10 +5,13 @@ import './index.css';
 import Home from './home';
 import Movie from './movie';
 
+const NotFound = () => {
+  return <h2>404 Not Found </h2>
+}
 
 let App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/movie-finder-reactjs">
       <nav className="navbar navbar-expand-lg navbar-success bg-success">
         <Link className="navbar-brand" to="/">MovieFinder</Link>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

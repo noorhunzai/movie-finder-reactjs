@@ -43,6 +43,9 @@ const Home = () => {
             </div>
           </div>
         </a>
+        <div className="mt-2">
+        <a href={`https://www.imdb.com/title/${movie.imdbID}`} target="_blank" rel="noopener noreferrer" className="btn btn-warning">View on IMDb</a>
+      </div>
       </div>
     ));
   };
@@ -63,7 +66,7 @@ const Home = () => {
                 />
               </div>
               <div className="col-auto col-auto mx-auto">
-                <button className="btn btn-success" onClick={handleSearchClick}>
+                <button className="btn btn-primary" onClick={handleSearchClick}>
                   Search
                 </button>
               </div>
